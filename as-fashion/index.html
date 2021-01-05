@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+
+    <!--Import Font-Awesome Icon Font-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <title>AS Fashion</title>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-info">
+        <a class="navbar-brand mb-0" href="#">
+            <i class="fa fa-ravelry" aria-hidden="true"></i>
+            AS Fashion</a>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="card">
+                    <div class="card-header text-center h4">
+                        Invoice
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> Document No</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="document-no">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> Date</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="date" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <form id="form-element" class="pt-2">
+                            <div class="row mb-2 input-delegation">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Lot No</span>
+                                            </div>
+                                            <input type="text" id="lot-no" class="form-control"
+                                                placeholder="Enter Lot No">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Quantity</span>
+                                            </div>
+                                            <input type="number" id="quantity" class="form-control" maxlength="10"
+                                                placeholder="Enter Quantity">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Rate</span>
+                                            </div>
+                                            <input type="number" id="rate" class="form-control" maxlength="10"
+                                                placeholder="Enter Rate">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">pcs</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="float-right insert-here"><button id="add-lot" type="button" class="btn btn-info"><i class="fa fa-plus"></i> Add Lot</button></div> -->
+                        </form>
+                        <!-- <br>
+                        <br> -->
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Amount</span>
+                                    </div>
+                                    <input type="number" id="before-amount" class="form-control" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <button id="calculate" type="button" class="btn btn-info btn-lg btn-block"><i
+                                class="fa fa-calculator" aria-hidden="true"></i> Calculate</button>
+                        <br>
+
+                        <div class="calculation"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
